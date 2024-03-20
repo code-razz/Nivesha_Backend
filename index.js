@@ -18,7 +18,7 @@ const PORT=process.env.PORT || 8000;
 const app=express();
 
 app.use(cors({
-    origin: 'http://localhost:5173',
+    origin: ['http://localhost:5173', 'https://nivesha-backend.onrender.com/'],
     credentials: true, // If you're using cookies or authentication
   }));
 
